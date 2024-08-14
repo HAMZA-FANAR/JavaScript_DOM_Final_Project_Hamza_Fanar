@@ -11993,14 +11993,20 @@ nav {
   color: #fff;
   padding: 20px 50px;
 }
-.about2-div1 button {
+
+.about2-div1-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about2-div1-btn button {
   padding: 10px 50px;
   border: none;
   background-color: #e47e7e;
   color: #fff;
   border-radius: 35px;
 }
-.about2-div1 button:hover {
+.about2-div1-btn button:hover {
   background-color: #fff;
   color: #ce1212;
   transition: 0.5s;
