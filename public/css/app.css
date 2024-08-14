@@ -11978,4 +11978,52 @@ nav {
   color: #909297;
 }
 
+.about2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0;
+  background-color: #f2f2f2;
+  padding-inline: 100px;
+}
+
+.about2-div1 {
+  width: 30%;
+  background-color: #ce1212;
+  color: #fff;
+  padding: 20px 50px;
+}
+.about2-div1 button {
+  padding: 10px 50px;
+  border: none;
+  background-color: #e47e7e;
+  color: #fff;
+  border-radius: 35px;
+}
+.about2-div1 button:hover {
+  background-color: #fff;
+  color: #ce1212;
+  transition: 0.5s;
+}
+
+.about2-div2 {
+  width: 20%;
+  text-align: center;
+  background-color: #fff;
+  padding-block: 110px;
+}
+.about2-div2 i {
+  font-size: 50px;
+  color: #ce1212;
+}
+.about2-div2 h3, .about2-div2 .h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+.about2-div2 p {
+  font-size: 15px;
+  color: #888;
+}
+
 /*# sourceMappingURL=app.css.map */
