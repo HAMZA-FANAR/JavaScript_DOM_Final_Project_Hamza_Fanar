@@ -11,6 +11,13 @@
 .header-div2
     img
         width: 80%
+    @keyframes up-down
+            0%
+                transform: translateY(0)
+            100%
+                transform: translateY(20px)
+.move
+    animation: up-down 2s ease-in-out infinite alternate-reverse both
 
 .header-div1
     h1

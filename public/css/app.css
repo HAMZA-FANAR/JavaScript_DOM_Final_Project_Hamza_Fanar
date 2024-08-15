@@ -13890,6 +13890,18 @@ nav {
 .header-div2 img {
   width: 80%;
 }
+@keyframes up-down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+.move {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
 
 .header-div1 h1, .header-div1 .h1 {
   width: 70%;
@@ -14029,12 +14041,16 @@ nav {
   justify-content: center;
   justify-content: space-evenly;
 }
-.about3::before {
-  content: "";
-  background: rgb(0, 0, 0);
-  opacity: 0.5;
-}
 
+.about3-div1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .chef2-div1 {
   display: flex;
   justify-content: center;
@@ -14119,6 +14135,22 @@ nav {
 .chef2-div2-mini-div1-btn button:hover {
   background-color: #d74040;
   color: #fff;
+}
+
+.border {
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 15px;
+}
+.border svg:hover {
+  color: red;
+}
+
+footer {
+  background-color: #1f1f24;
+  color: white;
+  padding-inline: 10vh;
+  padding: 50px;
 }
 
 /*# sourceMappingURL=app.css.map */
