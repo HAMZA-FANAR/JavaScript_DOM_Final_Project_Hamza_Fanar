@@ -65,7 +65,6 @@ let nextBtns = document.querySelectorAll(".next")
   
   
   
-  //* sliding function
   let currentIndex = 0
   const slideImage = (index, myBtn) => {
   
@@ -83,11 +82,9 @@ let nextBtns = document.querySelectorAll(".next")
   
   
   
-              //* clikit 3la previous  o ana  aslan f awel image  khasni nmchi  l image lakhra
               if (index < 0) {
                   index = slides.length - 1
               } else if (index >= slides.length) {
-                  //* clikit 3la next o ana  aslan f akhir image khasni nrje3  l image lewla
                   index = 0
               }
   
@@ -97,7 +94,6 @@ let nextBtns = document.querySelectorAll(".next")
               indicators[index].classList.add("activeIndicator")
   
   
-              //* hna bach n7arek l camera dyal lcarousel
               camera.style.transform = `translateX(-${slideWidth * index}px)`
               currentIndex = index
           }
@@ -106,34 +102,27 @@ let nextBtns = document.querySelectorAll(".next")
   
   }
   
-  //* btn dyal next
   nextBtns.forEach(next => {
       next.addEventListener("click", (event) => { slideImage(currentIndex + 1, event.target) })
   });
   
-  //* btn dyal previous
   previousBtns.forEach(previous => {
       previous.addEventListener("click", (event) => { slideImage(currentIndex - 1, event.target) })
   });
   
   
-  //* auto slide 
   containers.forEach(container => {
-      //* check wach  l element 3ando attribute auto slide   
       if (container.getAttribute("autoslide")) {
           let nextBtn = container.querySelector(".next")
   
           setInterval(() => {
-              //* method  kanwarek  biha  3la  btn 
               nextBtn.click()
           }, 3000);
       }
   });
   
-  //* indicators 
   
   containers.forEach(container => {
-      //! variables  sal7in  ghir  l lelement  li mt7a9a9 fih chart dyalna  
       let slides = container.querySelectorAll(".slide")
       let indicatorsGrp = document.createElement("div")
       indicatorsGrp.classList.add("indicators-grp")

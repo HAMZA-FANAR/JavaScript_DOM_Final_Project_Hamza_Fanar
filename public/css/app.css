@@ -14322,8 +14322,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 250px;
+  padding: 0 400px;
   padding-block: 10vh;
+  border-inline-start: 1px solid black;
 }
 .testimonials .slide .content h3, .testimonials .slide .content .h3 {
   font-size: 18px;
@@ -14402,7 +14403,7 @@ footer {
   background-color: aliceblue;
 }
 
-button {
+.previous, .next {
   display: none;
 }
 
