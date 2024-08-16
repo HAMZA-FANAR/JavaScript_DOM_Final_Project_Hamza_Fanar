@@ -74,29 +74,35 @@
 .previous , .next
     display: none
 
-@media (max-width: 428px)
-    .carousel-container
-        padding-left: 10px
-        padding-right: 10px
-    .slide
-        display: flex
-        flex-direction: column
-        align-items: center
-        padding: 0px 100px
-        width: 100%
+@media screen and (max-width: 428px)
+    .testimonials
+        padding-bottom: 10px
+        .slide
+            flex-direction: column
+            padding: 0 20px
+
         .content
+            width: 100%
             h3
-                font-size: 14px
+                font-size: 16px
+
             h4
-                font-size: 10px
-            .stars
-                i
-                    font-size: 10px
-            i
-                font-size: 10px
-            .icon-left
-                font-size: 10px
-    .profil
-        img
-            width: 100px
-            height: 100px
+                font-size: 12px
+
+            p
+                font-size: 14px
+                margin-bottom: 10px
+
+            .icon1, .icon2
+                font-size: 18px
+
+        .profil
+            img
+                width: 200px
+                margin-bottom: 10px
+    .indicators-grp
+        bottom: 5%
+        gap: 5px
+
+    .indicator
+        padding: 0.3vh 2vw

@@ -14079,8 +14079,12 @@ nav {
 @media (max-width: 428px) {
   .header {
     flex-direction: column;
+    flex-direction: column-reverse;
     padding-inline: 20px;
     padding-block: 50px;
+  }
+  .header-div1 {
+    padding-top: 50px;
   }
   .header-div1 h1, .header-div1 .h1 {
     width: 100%;
@@ -14610,36 +14614,40 @@ footer {
   display: none;
 }
 
-@media (max-width: 428px) {
-  .carousel-container {
-    padding-left: 10px;
-    padding-right: 10px;
+@media screen and (max-width: 428px) {
+  .testimonials {
+    padding-bottom: 10px;
   }
-  .slide {
-    display: flex;
+  .testimonials .slide {
     flex-direction: column;
-    align-items: center;
-    padding: 0px 100px;
+    padding: 0 20px;
+  }
+  .testimonials .content {
     width: 100%;
   }
-  .slide .content h3, .slide .content .h3 {
+  .testimonials .content h3, .testimonials .content .h3 {
+    font-size: 16px;
+  }
+  .testimonials .content h4, .testimonials .content .h4 {
+    font-size: 12px;
+  }
+  .testimonials .content p {
     font-size: 14px;
+    margin-bottom: 10px;
   }
-  .slide .content h4, .slide .content .h4 {
-    font-size: 10px;
+  .testimonials .content .icon1, .testimonials .content .icon2 {
+    font-size: 18px;
   }
-  .slide .content .stars i {
-    font-size: 10px;
+  .testimonials .profil img {
+    width: 200px;
+    margin-bottom: 10px;
   }
-  .slide .content i {
-    font-size: 10px;
+  .indicators-grp {
+    bottom: 5%;
+    gap: 5px;
   }
-  .slide .content .icon-left {
-    font-size: 10px;
-  }
-  .profil img {
-    width: 100px;
-    height: 100px;
+  .indicator {
+    padding: 0.3vh 2vw;
   }
 }
 @media (max-width: 428px) {
