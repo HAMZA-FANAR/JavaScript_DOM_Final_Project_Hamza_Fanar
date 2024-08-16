@@ -143,7 +143,7 @@ let nextBtns = document.querySelectorAll(".next")
 
 // respo navbar
 
-respo=document.querySelector(".respo")
+let respo=document.querySelector(".respo")
 
 respo.addEventListener("click", ()=> {
    nav=document.querySelector(".nav-div2")
