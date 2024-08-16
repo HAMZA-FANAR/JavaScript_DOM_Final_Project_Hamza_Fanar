@@ -2,7 +2,7 @@
 @import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 @font-face {
   font-family: Amatic;
-  src: url(../font/AmaticSC-Bold.ttf);
+  src: url(../font/AmaticSC-Regular.ttf);
 }
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
@@ -14058,6 +14058,7 @@ nav {
   font-weight: 700;
   color: #373867;
   margin-bottom: 20px;
+  font-family: amatic;
 }
 .header-div1 p {
   font-size: 16px;
@@ -14102,6 +14103,9 @@ nav {
 .about-div1 {
   text-align: center;
   padding: 100px;
+}
+.about-div1 h1, .about-div1 .h1 {
+  font-family: amatic;
 }
 
 .about-div2 {
@@ -14456,6 +14460,10 @@ footer {
 
 .Menu-div3-container {
   padding-left: 10vw;
+}
+
+.menu-div1 h1, .menu-div1 .h1 {
+  font-family: amatic;
 }
 
 @media (max-width: 428px) {
