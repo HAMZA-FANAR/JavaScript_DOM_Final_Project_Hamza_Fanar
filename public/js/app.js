@@ -56,6 +56,18 @@ function outsideClick(e) {
 // end modal
 
 
+
+// glightbox
+document.addEventListener('DOMContentLoaded', function() {
+    const lightbox = GLightbox({
+      selector: '.glightbox'
+    });
+});
+// end glightbox
+
+
+
+
 // carousel
 
 
