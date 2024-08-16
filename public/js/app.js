@@ -139,3 +139,15 @@ let nextBtns = document.querySelectorAll(".next")
 
 
 // end carousel
+
+
+// respo navbar
+
+respo=document.querySelector(".respo")
+
+respo.addEventListener("click", ()=> {
+   nav=document.querySelector(".nav-div2")
+   nav.classList.toggle("active")
+})
+
+// end respo navbar
