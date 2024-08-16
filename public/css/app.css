@@ -14080,7 +14080,7 @@ nav {
   .header {
     flex-direction: column;
     padding-inline: 20px;
-    padding-block: 20px;
+    padding-block: 50px;
   }
   .header-div1 h1, .header-div1 .h1 {
     width: 100%;
@@ -14428,6 +14428,10 @@ footer {
   padding: 50px;
 }
 
+.footer-div1 {
+  gap: 100px;
+}
+
 @media (max-width: 428px) {
   footer {
     padding-inline: 0;
@@ -14435,6 +14439,8 @@ footer {
   }
   .footer-div1 {
     flex-direction: column;
+    justify-content: start;
+    align-items: start;
     gap: 50px;
   }
 }
@@ -14447,6 +14453,10 @@ footer {
   border-bottom: 4px solid red;
 }
 
+.Menu-div3-container {
+  padding-left: 10vw;
+}
+
 @media (max-width: 428px) {
   .Menu-div3 {
     flex-direction: column;
@@ -14456,6 +14466,15 @@ footer {
   .rsp-menu {
     width: 100%;
     margin-bottom: 20px;
+  }
+  .Menu-div3-container {
+    padding-left: 0;
+  }
+  .flix {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 .chef1-div2-div1 {
@@ -14505,7 +14524,10 @@ footer {
   align-items: center;
   padding: 0 400px;
   padding-block: 10vh;
-  border-inline-start: 1px solid black;
+}
+.testimonials .slide .content {
+  border-left: 5px solid black;
+  padding-left: 50px;
 }
 .testimonials .slide .content h3, .testimonials .slide .content .h3 {
   font-size: 18px;
@@ -14597,7 +14619,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
+    padding: 0px 100px;
     width: 100%;
   }
   .slide .content h3, .slide .content .h3 {
@@ -14621,10 +14643,6 @@ footer {
   }
 }
 @media (max-width: 428px) {
-  .contact-div4 {
-    width: 100%;
-    padding: 0;
-  }
   .contact-div4-div1 {
     flex-direction: column;
   }
@@ -14643,6 +14661,10 @@ footer {
   }
   .contact-div4-div4 button {
     width: 100%;
+  }
+  .contact-mini {
+    flex-direction: column;
+    padding-: 0;
   }
 }
 
